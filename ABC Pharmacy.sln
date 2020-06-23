@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABC Pharmacy", "ABC Pharmacy\ABC Pharmacy.csproj", "{38F62123-F8E2-4319-AA4F-FB9A6F5228AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{939CAC7A-383F-4C09-9FAB-6D1CED788F16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38F62123-F8E2-4319-AA4F-FB9A6F5228AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38F62123-F8E2-4319-AA4F-FB9A6F5228AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38F62123-F8E2-4319-AA4F-FB9A6F5228AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38F62123-F8E2-4319-AA4F-FB9A6F5228AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{939CAC7A-383F-4C09-9FAB-6D1CED788F16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{939CAC7A-383F-4C09-9FAB-6D1CED788F16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{939CAC7A-383F-4C09-9FAB-6D1CED788F16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{939CAC7A-383F-4C09-9FAB-6D1CED788F16}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE24CBC3-97EA-4BC5-AB18-42437C1F1975}
+	EndGlobalSection
+EndGlobal
