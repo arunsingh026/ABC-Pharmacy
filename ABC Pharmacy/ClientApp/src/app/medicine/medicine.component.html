@@ -1,0 +1,82 @@
+<ul class="navbar-nav mr-auto">
+  <li class="nav-item active">
+    <button type="button" [routerLink]="['/']" class="btn btn-primary"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>&nbsp;Back</button>
+  </li>
+</ul>
+<hr />
+<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+  <h3 class="register-heading">Add New Medicine in Inventory</h3>
+  <br />
+  <div class="alert alert-success" role="alert" *ngIf="result">
+    Data has been successfully added!!
+  </div>
+  <p></p>
+  <form [formGroup]="medicineForm" (ngSubmit)="onSubmit()">
+    <div class="row register-form">
+      <div class="col-md-6">
+        <div class="form-group">
+          <input type="text" class="form-control" [ngClass]="{'is-invalid' : medicineForm.get('fullName').errors && (medicineForm.get('fullName').touched
+             || medicineForm.get('fullName').dirty)}" id="fullName" formControlName="fullName" placeholder="Full Name *" value="" />
+          <span class="text-danger" *ngIf="medicineForm.get('fullName').errors && (medicineForm.get('fullName').touched
+             || medicineForm.get('fullName').dirty)">
+            <span *ngIf="medicineForm.get('fullName').errors.required">
+              Full Name is required
+            </span>
+          </span>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" [ngClass]="{'is-invalid' : medicineForm.get('brand').errors && (medicineForm.get('brand').touched
+             || medicineForm.get('brand').dirty)}" id="brand" formControlName="brand" placeholder="Brand *" value="" />
+          <span class="text-danger" *ngIf="medicineForm.get('brand').errors && (medicineForm.get('brand').touched
+             || medicineForm.get('brand').dirty)">
+            <span *ngIf="medicineForm.get('brand').errors.required">
+              Brand is required
+            </span>
+          </span>
+        </div>
+        <div class="form-group">
+          <input type="number" class="form-control" [ngClass]="{'is-invalid' : medicineForm.get('price').errors && (medicineForm.get('price').touched
+             || medicineForm.get('price').dirty)}" id="price" formControlName="price" placeholder="Price *" value="" />
+          <span class="text-danger" *ngIf="medicineForm.get('price').errors && (medicineForm.get('price').touched
+             || medicineForm.get('price').dirty)">
+            <span *ngIf="medicineForm.get('price').errors.required">
+              Price is required
+            </span>
+            <span *ngIf="medicineForm.get('price').errors.pattern">
+              Invalid price format
+            </span>
+          </span>
+        </div>
+        <div class="form-group">
+          <input type="number" class="form-control" [ngClass]="{'is-invalid' : medicineForm.get('quantity').errors && (medicineForm.get('quantity').touched
+             || medicineForm.get('quantity').dirty)}" id="quantity" formControlName="quantity" placeholder="Quantity *" value="" />
+          <span class="text-danger" *ngIf="medicineForm.get('quantity').errors && (medicineForm.get('quantity').touched
+             || medicineForm.get('quantity').dirty)">
+            <span *ngIf="medicineForm.get('quantity').errors.required">
+              Quantity is required
+            </span>
+            <span *ngIf="medicineForm.get('quantity').errors.pattern">
+              Invalid quantity
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <input type="date" class="form-control" [ngClass]="{'is-invalid' : medicineForm.get('expiryDate').errors && (medicineForm.get('expiryDate').touched
+             || medicineForm.get('expiryDate').dirty)}" id="expiryDate" formControlName="expiryDate" placeholder="Expiry Date *" value="" />
+          <span class="text-danger" *ngIf="medicineForm.get('expiryDate').errors && (medicineForm.get('expiryDate').touched
+             || medicineForm.get('expiryDate').dirty)">
+            <span *ngIf="medicineForm.get('expiryDate').errors.required">
+              Expiry Date is required
+            </span>
+          </span>
+        </div>
+        <div class="form-group">
+          <input type="text" id="notes" class="form-control" formControlName="notes" placeholder="Notes *" value="" />
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="!medicineForm.valid">Add</button>
+      </div>
+    </div>
+  </form>
+</div>

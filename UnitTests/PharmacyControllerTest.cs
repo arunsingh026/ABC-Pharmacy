@@ -6,12 +6,14 @@ using FluentAssertions;
 using ABC_Pharmacy.Controllers;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Http;
+using ABC_Pharmacy.DataAccess;
 
 namespace UnitTests
 {
     public class PharmacyControllerTest
     {
         private readonly IMapper _mapper;
+        private readonly IRepository _repository;
         private PharmacyController _mockController;
         private readonly ILogger<PharmacyController> _logger;
         private readonly HttpContext _httpContext;
@@ -20,22 +22,21 @@ namespace UnitTests
         {
             _logger = Substitute.For<Logger<PharmacyController>>();
             _mapper = Substitute.For<IMapper>();
+            _repository = Substitute.For<IRepository>();
             _httpContext = Substitute.For<HttpContext>();
         }
         [Fact]
         public void Controller_Constructor_Success()
         {
-            // Act
-            _mockController = GetController();
-            _mockController.GetList();
-            // Assert
-            _mockController.Ok();
+            PharmacyController ph = GetController();
+            ph.GetList();
         }
 
         private PharmacyController GetController()
         {
             return new PharmacyController(
-               _logger)
+               _logger,
+               _repository)
             {
                 ControllerContext =
                 {

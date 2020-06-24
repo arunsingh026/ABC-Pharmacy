@@ -13,7 +13,7 @@ namespace ABC_Pharmacy.Models
 
         public decimal Price { get; set; }
 
-        public string Quantity { get; set; }
+        public int Quantity { get; set; }
 
         public DateTime ExpiryDate { get; set; }
 

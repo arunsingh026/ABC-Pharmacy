@@ -1,1 +1,75 @@
-[{"FullName":"A","Brand":null,"Price":0.0,"Quantity":null,"ExpiryDate":"0001-01-01T00:00:00","Notes":null,"Id":"8339f90b-e6d1-442f-a603-fe7e81f1cf7a"},{"FullName":"B","Brand":null,"Price":0.0,"Quantity":null,"ExpiryDate":"0001-01-01T00:00:00","Notes":null,"Id":"bc8db85a-0142-4d3f-b253-a71ba35a7e14"},{"FullName":"C update","Brand":null,"Price":0.0,"Quantity":null,"ExpiryDate":"0001-01-01T00:00:00","Notes":null,"Id":"183dfbd6-5a0d-4dc2-94cd-3c3200953646"},{"FullName":"D","Brand":null,"Price":0.0,"Quantity":null,"ExpiryDate":"0001-01-01T00:00:00","Notes":null,"Id":"0e619fd2-f516-4c1e-ab62-e1a64f82cdd7"}]
+[
+  {
+    "FullName": "paracetemol",
+    "Brand": "cipla",
+    "Price": 10.0,
+    "Quantity": 1000,
+    "ExpiryDate": "2020-07-29T00:00:00",
+    "Notes": "for fever",
+    "Id": "3bf8b21d-a060-412a-95b1-f1403d327d19"
+  }
+  ,
+  {
+    "FullName": "neumoslide",
+    "Brand": "ranbaxy",
+    "Price": 23.0,
+    "Quantity": 6754,
+    "ExpiryDate": "2020-07-07T00:00:00",
+    "Notes": "pain killer",
+    "Id": "359a303d-057a-49b3-b3c3-f686945a4f39"
+  },
+  {
+    "FullName": "diabetic",
+    "Brand": "cipla",
+    "Price": 34.0,
+    "Quantity": 7,
+    "ExpiryDate": "2020-07-01T00:00:00",
+    "Notes": "fgh",
+    "Id": "d3609af8-f20d-4265-87db-93755daa74ee"
+  },
+  {
+    "FullName": "gemecal",
+    "Brand": "ranbaxy",
+    "Price": 87.0,
+    "Quantity": 7,
+    "ExpiryDate": "2020-07-30T00:00:00",
+    "Notes": "calcium",
+    "Id": "d90dbf0b-1f8b-4876-b7f1-8ba8850b3ae6"
+  },
+  {
+    "FullName": "memz",
+    "Brand": "cipla",
+    "Price": 150.0,
+    "Quantity": 123,
+    "ExpiryDate": "2020-08-28T00:00:00",
+    "Notes": "sdqwddw",
+    "Id": "5b15d3a2-d321-4bec-b84f-11a9df31b95a"
+  },
+  {
+    "FullName": "memz c c",
+    "Brand": "cipla",
+    "Price": 150.0,
+    "Quantity": 126,
+    "ExpiryDate": "2020-11-22T00:00:00",
+    "Notes": "sdsd",
+    "Id": "49eec797-bfd8-4dd3-a178-ebebeb82f876"
+  },
+  {
+    "FullName": "C Tab",
+    "Brand": "cipla",
+    "Price": 152.0,
+    "Quantity": 8,
+    "ExpiryDate": "2020-11-21T00:00:00",
+    "Notes": "seddwqed",
+    "Id": "434addee-0c8c-4226-a38e-31fc9f469221"
+  },
+  {
+    "FullName": "Depura",
+    "Brand": "cipla",
+    "Price": 520.0,
+    "Quantity": 12,
+    "ExpiryDate": "2020-12-26T00:00:00",
+    "Notes": "edsd",
+    "Id": "edcebbda-5599-4356-af00-1a1ed87c0389"
+  }
+]
